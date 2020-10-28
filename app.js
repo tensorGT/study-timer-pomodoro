@@ -16,3 +16,12 @@ var logEmptyEl = document.getElementById("log-empty");
 var clearLogBtn = document.getElementById("clear-log-btn");
 
 ringProgress.style.strokeDasharray = CIRCUMFERENCE;
+
+var mode = "work"; // "work" or "break"
+var totalSeconds = 25 * 60;
+var remainingSeconds = totalSeconds;
+var timerId = null;
+var sessions = loadSessions();
+
+function loadSessions() {
+  try {
