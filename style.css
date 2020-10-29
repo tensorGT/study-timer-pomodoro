@@ -31,3 +31,14 @@ body {
 .timer-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.timer-header h1 {
+  font-size: 1.3rem;
+}
+
+.mode-tabs {

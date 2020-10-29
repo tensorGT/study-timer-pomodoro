@@ -25,3 +25,12 @@ var sessions = loadSessions();
 
 function loadSessions() {
   try {
+    var raw = localStorage.getItem(LOG_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (err) {
+    return [];
+  }
+}
+
+function saveSessions() {
+  localStorage.setItem(LOG_KEY, JSON.stringify(sessions));
