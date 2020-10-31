@@ -42,3 +42,14 @@ body {
 }
 
 .mode-tabs {
+  display: flex;
+  background-color: #18181b;
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.mode-btn {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;

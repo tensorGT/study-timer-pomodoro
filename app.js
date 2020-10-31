@@ -34,3 +34,12 @@ function loadSessions() {
 
 function saveSessions() {
   localStorage.setItem(LOG_KEY, JSON.stringify(sessions));
+}
+
+function formatTime(sec) {
+  var m = Math.floor(sec / 60);
+  var s = sec % 60;
+  return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+}
+
+function updateUI() {
