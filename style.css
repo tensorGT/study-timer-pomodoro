@@ -53,3 +53,14 @@ body {
   font-family: inherit;
   font-size: 0.85rem;
   font-weight: 600;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #a1a1aa;
+  cursor: pointer;
+}
+
+.mode-btn.active {
+  background-color: #ef4444;
+  color: #ffffff;

@@ -43,3 +43,12 @@ function formatTime(sec) {
 }
 
 function updateUI() {
+  timeDisplay.textContent = formatTime(remainingSeconds);
+  document.title = formatTime(remainingSeconds) + " - Pomodoro";
+
+  var fraction = totalSeconds > 0 ? remainingSeconds / totalSeconds : 0;
+  var offset = CIRCUMFERENCE * (1 - fraction);
+  ringProgress.style.strokeDashoffset = offset;
+}
+
+function setMode(newMode) {
