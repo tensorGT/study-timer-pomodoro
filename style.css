@@ -64,3 +64,14 @@ body {
 .mode-btn.active {
   background-color: #ef4444;
   color: #ffffff;
+}
+
+/* circular progress ring */
+.ring-wrap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 24px;
+}
+
+.progress-ring {

@@ -52,3 +52,12 @@ function updateUI() {
 }
 
 function setMode(newMode) {
+  pauseTimer();
+  mode = newMode;
+  document.body.classList.toggle("break-mode", mode === "break");
+  modeWorkBtn.classList.toggle("active", mode === "work");
+  modeBreakBtn.classList.toggle("active", mode === "break");
+  modeWorkBtn.setAttribute("aria-selected", mode === "work");
+  modeBreakBtn.setAttribute("aria-selected", mode === "break");
+
+  var mins = mode === "work" ? parseInt(workInput.value, 10) || 25 : parseInt(breakInput.value, 10) || 5;
