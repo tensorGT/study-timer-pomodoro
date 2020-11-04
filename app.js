@@ -61,3 +61,12 @@ function setMode(newMode) {
   modeBreakBtn.setAttribute("aria-selected", mode === "break");
 
   var mins = mode === "work" ? parseInt(workInput.value, 10) || 25 : parseInt(breakInput.value, 10) || 5;
+  totalSeconds = mins * 60;
+  remainingSeconds = totalSeconds;
+  updateUI();
+}
+
+function startTimer() {
+  if (timerId !== null) return;
+  startPauseBtn.textContent = "Pause";
+  timerId = setInterval(function () {
