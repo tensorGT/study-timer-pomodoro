@@ -70,3 +70,12 @@ function startTimer() {
   if (timerId !== null) return;
   startPauseBtn.textContent = "Pause";
   timerId = setInterval(function () {
+    remainingSeconds -= 1;
+    updateUI();
+
+    if (remainingSeconds <= 0) {
+      pauseTimer();
+      handleFinish();
+    }
+  }, 1000);
+}

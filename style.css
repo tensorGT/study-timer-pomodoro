@@ -86,3 +86,14 @@ body {
 
 .ring-fg {
   fill: none;
+  stroke: #ef4444;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s linear, stroke 0.2s ease;
+}
+
+body.break-mode .ring-fg {
+  stroke: #10b981;
+}
+
+body.break-mode .mode-btn.active {
