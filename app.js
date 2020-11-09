@@ -79,3 +79,12 @@ function startTimer() {
     }
   }, 1000);
 }
+
+function pauseTimer() {
+  if (timerId !== null) {
+    clearInterval(timerId);
+    timerId = null;
+  }
+  startPauseBtn.textContent = "Start";
+}
+
