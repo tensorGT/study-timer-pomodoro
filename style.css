@@ -108,3 +108,14 @@ body.break-mode .mode-btn.active {
   justify-content: center;
   font-family: 'Fira Code', monospace;
   font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+

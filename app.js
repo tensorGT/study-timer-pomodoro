@@ -88,3 +88,13 @@ function pauseTimer() {
   startPauseBtn.textContent = "Start";
 }
 
+function toggleTimer() {
+  if (timerId === null) {
+    startTimer();
+  } else {
+    pauseTimer();
+  }
+}
+
+function resetTimer() {
+  setMode(mode);
