@@ -3,3 +3,4 @@
 A simple Pomodoro timer I built in vanilla JS to help me focus while studying.
 
 ## Features
+- Customizable focus and break lengths

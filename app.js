@@ -98,3 +98,12 @@ function toggleTimer() {
 
 function resetTimer() {
   setMode(mode);
+}
+
+function playBeep() {
+  try {
+    var AudioCtx = window.AudioContext || window.webkitAudioContext;
+    var ctx = new AudioCtx();
+    var osc = ctx.createOscillator();
+    var gain = ctx.createGain();
+    osc.type = "sine";

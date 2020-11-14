@@ -119,3 +119,14 @@ body.break-mode .mode-btn.active {
   margin-bottom: 14px;
 }
 
+.btn-main,
+.btn-sub {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
