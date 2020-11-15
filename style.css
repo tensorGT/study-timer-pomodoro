@@ -130,3 +130,14 @@ body.break-mode .mode-btn.active {
   cursor: pointer;
 }
 
+.btn-main {
+  background-color: #ef4444;
+  color: #ffffff;
+  min-width: 110px;
+}
+
+body.break-mode .btn-main {
+  background-color: #10b981;
+}
+
+.btn-sub {

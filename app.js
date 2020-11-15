@@ -107,3 +107,12 @@ function playBeep() {
     var osc = ctx.createOscillator();
     var gain = ctx.createGain();
     osc.type = "sine";
+    osc.frequency.value = 660;
+    gain.gain.value = 0.15;
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + 0.35);
+  } catch (err) {
+    console.log("audio blocked", err);
+  }
