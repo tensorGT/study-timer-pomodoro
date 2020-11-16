@@ -116,3 +116,12 @@ function playBeep() {
   } catch (err) {
     console.log("audio blocked", err);
   }
+}
+
+function showBrowserAlert(text) {
+  if ("Notification" in window && Notification.permission === "granted") {
+    new Notification("Study Pomodoro", { body: text });
+  }
+}
+
+function handleFinish() {

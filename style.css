@@ -141,3 +141,14 @@ body.break-mode .btn-main {
 }
 
 .btn-sub {
+  background-color: #3f3f46;
+  color: #f4f4f5;
+}
+
+.btn-sub:hover {
+  background-color: #52525b;
+}
+
+.shortcut-hint {
+  text-align: center;
+  font-size: 0.8rem;
