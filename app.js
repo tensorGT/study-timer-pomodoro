@@ -125,3 +125,12 @@ function showBrowserAlert(text) {
 }
 
 function handleFinish() {
+  playBeep();
+  var label = mode === "work" ? "Focus session done! Time for a break." : "Break over! Ready to focus?";
+  showBrowserAlert(label);
+
+  var mins = Math.round(totalSeconds / 60);
+  sessions.unshift({
+    type: mode === "work" ? "Focus" : "Break",
+    minutes: mins,
+    finishedAt: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
