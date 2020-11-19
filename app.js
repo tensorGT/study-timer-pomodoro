@@ -134,3 +134,12 @@ function handleFinish() {
     type: mode === "work" ? "Focus" : "Break",
     minutes: mins,
     finishedAt: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+  });
+  saveSessions();
+  renderSessions();
+
+  // auto switch mode for convenience
+  setMode(mode === "work" ? "break" : "work");
+}
+
+function renderSessions() {
