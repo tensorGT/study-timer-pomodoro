@@ -143,3 +143,12 @@ function handleFinish() {
 }
 
 function renderSessions() {
+  sessionLogEl.innerHTML = "";
+  logEmptyEl.style.display = sessions.length ? "none" : "block";
+
+  sessions.forEach(function (item) {
+    var li = document.createElement("li");
+    li.className = "session-item";
+    li.innerHTML =
+      "<span><strong>" + item.type + "</strong> (" + item.minutes + " min)</span>" +
+      '<span class="session-meta">' + item.finishedAt + "</span>";
