@@ -152,3 +152,12 @@ function renderSessions() {
     li.innerHTML =
       "<span><strong>" + item.type + "</strong> (" + item.minutes + " min)</span>" +
       '<span class="session-meta">' + item.finishedAt + "</span>";
+    sessionLogEl.appendChild(li);
+  });
+}
+
+startPauseBtn.addEventListener("click", toggleTimer);
+resetBtn.addEventListener("click", resetTimer);
+modeWorkBtn.addEventListener("click", function () { setMode("work"); });
+modeBreakBtn.addEventListener("click", function () { setMode("break"); });
+

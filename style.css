@@ -185,3 +185,14 @@ kbd {
   font-size: 0.95rem;
   padding: 8px 10px;
   border-radius: 6px;
+  border: 1px solid #52525b;
+  background-color: #18181b;
+  color: #ffffff;
+}
+
+/* session log */
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
