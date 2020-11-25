@@ -161,3 +161,12 @@ resetBtn.addEventListener("click", resetTimer);
 modeWorkBtn.addEventListener("click", function () { setMode("work"); });
 modeBreakBtn.addEventListener("click", function () { setMode("break"); });
 
+workInput.addEventListener("change", function () {
+  if (mode === "work" && timerId === null) setMode("work");
+});
+
+breakInput.addEventListener("change", function () {
+  if (mode === "break" && timerId === null) setMode("break");
+});
+
+notifyBtn.addEventListener("click", function () {

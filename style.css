@@ -196,3 +196,14 @@ kbd {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+}
+
+.log-header h2 {
+  font-size: 1.05rem;
+}
+
+.clear-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  background: none;
+  border: 1px solid #52525b;
