@@ -170,3 +170,12 @@ breakInput.addEventListener("change", function () {
 });
 
 notifyBtn.addEventListener("click", function () {
+  if ("Notification" in window) {
+    Notification.requestPermission().then(function (perm) {
+      notifyBtn.textContent = perm === "granted" ? "Alerts On" : "Alerts Blocked";
+    });
+  }
+});
+
+clearLogBtn.addEventListener("click", function () {
+  sessions = [];
