@@ -179,3 +179,12 @@ notifyBtn.addEventListener("click", function () {
 
 clearLogBtn.addEventListener("click", function () {
   sessions = [];
+  saveSessions();
+  renderSessions();
+});
+
+// keyboard shortcuts
+document.addEventListener("keydown", function (e) {
+  if (e.target.tagName === "INPUT") return;
+  if (e.code === "Space") {
+    e.preventDefault();

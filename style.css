@@ -218,3 +218,14 @@ kbd {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  background-color: #18181b;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
