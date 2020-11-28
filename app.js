@@ -188,3 +188,13 @@ document.addEventListener("keydown", function (e) {
   if (e.target.tagName === "INPUT") return;
   if (e.code === "Space") {
     e.preventDefault();
+    toggleTimer();
+  } else if (e.key === "r" || e.key === "R") {
+    resetTimer();
+  } else if (e.key === "m" || e.key === "M") {
+    setMode(mode === "work" ? "break" : "work");
+  }
+});
+
+updateUI();
+renderSessions();
